@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Scissors, Sparkles, Clock, Heart, Star, Phone, ArrowRight } from "lucide-react";
 import Icon from "@/components/ui/icon";
+import SpinWheel from "@/components/SpinWheel";
 
 const Index = () => {
   const [visibleSections, setVisibleSections] = useState<Record<string, boolean>>({});
@@ -249,6 +250,22 @@ const Index = () => {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* Spin Wheel */}
+      <section className="py-32 px-6 bg-accent/5">
+        <div className="max-w-3xl mx-auto text-center">
+          <span className="text-xs font-medium tracking-widest text-accent/60 uppercase">Акция</span>
+          <h2 className="text-5xl lg:text-6xl font-display font-black tracking-tighter mt-4 mb-4">
+            <span className="bg-gradient-to-r from-white via-white to-accent/40 bg-clip-text text-transparent">
+              Колесо чудес
+            </span>
+          </h2>
+          <p className="text-white/60 text-lg mb-12 font-light">
+            Крутите барабан — каждый клиент выигрывает гарантированный приз!
+          </p>
+          <SpinWheel />
         </div>
       </section>
 
