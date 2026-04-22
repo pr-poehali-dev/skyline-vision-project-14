@@ -40,7 +40,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
           <div className="flex items-center">
             <div className="font-display font-bold text-2xl tracking-tighter bg-gradient-to-r from-white via-accent to-accent/80 bg-clip-text text-transparent">
-              Beauté
+              Кутюр
             </div>
           </div>
           <nav className="hidden md:flex gap-10 text-sm font-medium">
@@ -55,9 +55,9 @@ const Index = () => {
             </a>
           </nav>
           <div className="flex gap-3">
-            <button className="px-5 py-2.5 text-sm font-medium border border-accent/40 rounded-full hover:border-accent/70 hover:bg-accent/10 transition-all">
-              Позвонить
-            </button>
+            <a href="tel:342121" className="px-5 py-2.5 text-sm font-medium border border-accent/40 rounded-full hover:border-accent/70 hover:bg-accent/10 transition-all">
+              34-21-21
+            </a>
             <button className="px-5 py-2.5 text-sm font-medium bg-gradient-to-r from-accent via-accent to-accent/80 text-black rounded-full hover:shadow-lg hover:shadow-accent/40 transition-all font-semibold">
               Записаться
             </button>
@@ -367,7 +367,11 @@ const Index = () => {
       {/* Footer */}
       <footer className="border-t border-accent/10 py-12 px-6 bg-background/50">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-muted-foreground">
-          <p>© 2026 Beauté — Салон красоты</p>
+          <div className="flex flex-col gap-1">
+            <p>© 2026 Салон красоты «Кутюр»</p>
+            <p>г. Иваново, ул. 10 августа, д. 43, офис 205</p>
+            <a href="tel:342121" className="hover:text-white transition-colors">Тел: 34-21-21</a>
+          </div>
           <div className="flex gap-8">
             <a href="#" className="hover:text-white transition-colors">
               Политика конфиденциальности
